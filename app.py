@@ -205,8 +205,8 @@ if st.session_state.processed and st.session_state.cluster is not None:
         #     # Delete the directory after creating the ZIP
         #     shutil.rmtree(dir_name)
 
-    # Write CSV data to file every time the name is updated
-    with open(CSV_FILENAME, mode='w', newline='') as file:
+    # Write CSV data to file every time the name is updated, using UTF-8 encoding
+    with open(CSV_FILENAME, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(CSV_HEADER)
         writer.writerows(csv_data)
