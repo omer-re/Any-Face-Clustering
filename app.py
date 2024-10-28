@@ -17,6 +17,7 @@ OUTPUT_DIR = "output"
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
+
 # File paths for caching and outputs
 CACHE_FILE = os.path.join(OUTPUT_DIR, "face_clustering_cache.pkl")
 CSV_FILENAME = os.path.join(OUTPUT_DIR, "face_clustering_results.csv")
